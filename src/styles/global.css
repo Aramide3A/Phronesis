@@ -1,0 +1,449 @@
+/* React compatibility layer over the original HTML template stylesheet. */
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  overflow: hidden;
+}
+
+.main-header .header-top .top-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.main-header .header-top .info-list {
+  float: none;
+}
+
+.react-search-button {
+  position: relative;
+  float: none;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  line-height: 27px;
+  color: #8c8f9a;
+}
+
+.react-search-button:hover {
+  color: #fa7720;
+}
+
+.legacy-search-panel {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.legacy-search-panel .search-panel {
+  float: right;
+  width: 320px;
+  background: #ffffff;
+  border-top: 3px solid #df6512;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.12);
+}
+
+.legacy-search-results {
+  display: grid;
+  gap: 0;
+  padding: 0 20px 20px;
+}
+
+.legacy-search-results a {
+  display: block;
+  padding: 9px 0;
+  color: #222222;
+  border-bottom: 1px solid #e7e7e7;
+  font-weight: 500;
+}
+
+.legacy-search-results a:hover {
+  color: #fa7720;
+}
+
+.main-menu .navigation > li.dropdown:hover > ul,
+.main-menu .navigation > li.dropdown:focus-within > ul {
+  display: block;
+}
+
+.main-menu .navigation > li > a.active {
+  color: #fa7720;
+}
+
+.main-menu .navigation > li:has(> a.active):before {
+  width: 100%;
+  left: 0;
+}
+
+.react-mobile-toggler {
+  background: transparent;
+  border: 0;
+}
+
+.home-main-slider {
+  position: relative;
+  display: block;
+  min-height: 810px;
+  overflow: hidden;
+  background: #191e34;
+}
+
+.home-main-slide {
+  position: relative;
+  min-height: 810px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(25, 30, 52, 0.45);
+}
+
+.home-main-container {
+  position: relative;
+  z-index: 1;
+}
+
+.home-main-slider .content-box {
+  position: relative;
+  max-width: 790px;
+  padding-top: 285px;
+  padding-bottom: 170px;
+}
+
+.home-main-slider h2 {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  font-size: 70px;
+  line-height: 1.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-shadow: 1px 3px 1px #000000;
+}
+
+.home-main-slider .text {
+  position: relative;
+  display: block;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.45em;
+  font-weight: 600;
+  max-width: 650px;
+  margin-bottom: 40px;
+  text-shadow: 1px 3px 1px #000000;
+}
+
+.home-slider-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 42px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.home-slider-dots button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.home-slider-dots button.active {
+  background: #fa7720;
+  border-color: #fa7720;
+}
+
+.home-about-section {
+  display: block;
+}
+
+.react-main-slider {
+  top: 0;
+  margin-bottom: 0;
+}
+
+.react-slide {
+  position: relative;
+  min-height: 810px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.react-slide:before {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: rgba(25, 30, 52, 0.45);
+}
+
+.react-slide .auto-container {
+  position: relative;
+  z-index: 1;
+}
+
+.react-slide-content {
+  max-width: 760px;
+  padding-top: 285px;
+}
+
+.react-slide-content h2 {
+  text-shadow: 1px 3px 1px #000000;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.react-slide-content .text {
+  max-width: 650px;
+  margin-top: 22px;
+  text-shadow: 1px 3px 1px #000000;
+  font-weight: 600;
+}
+
+.react-slide-content .link-box {
+  margin-top: 40px;
+}
+
+.react-slider-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 42px;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.react-slider-dots button {
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  background: transparent;
+}
+
+.react-slider-dots button.active {
+  background: #fa7720;
+  border-color: #fa7720;
+}
+
+.service-block .image-box .image img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.services-section .service-block .image-box .image img {
+  height: 270px;
+}
+
+.service-block .lower-content .link-box a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.legacy-complementary {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  padding: 45px 45px 30px;
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.05);
+}
+
+.legacy-complementary h4 {
+  color: #222222;
+  font-size: 26px;
+  line-height: 1.2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.legacy-complementary p {
+  margin-bottom: 25px;
+}
+
+.category-list li:has(a.active):before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.category-list li a.active {
+  color: #ffffff;
+}
+
+.category-list li a.active:before {
+  color: #ffffff;
+}
+
+.category-list li a.active:after {
+  transform-origin: left bottom;
+  transform: scale(1, 1);
+}
+
+.react-graph {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 9px solid #fa7720;
+  background: #ffffff;
+}
+
+.contact-map-section iframe {
+  display: block;
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+.profile-pdf-box iframe {
+  width: 100%;
+  height: 720px;
+  border: 1px solid #e7e7e7;
+  margin-top: 30px;
+}
+
+.form-status {
+  color: #fa7720;
+  font-weight: 600;
+}
+
+.contact-info-inline {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.contact-info-inline-item {
+  min-width: 220px;
+}
+
+.contact-info-inline-item h6 {
+  margin-bottom: 15px;
+}
+
+.contact-info-inline-item .text a {
+  display: inline;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-info-inline {
+    gap: 24px;
+  }
+
+  .contact-info-inline-item {
+    min-width: 100%;
+  }
+
+  .header-style-three {
+    position: relative;
+    background-color: #191e34;
+  }
+
+  .main-header .header-upper .logo {
+    padding: 18px 0;
+  }
+
+  .react-mobile-toggler {
+    display: block;
+  }
+
+  .main-header .main-menu {
+    width: 100%;
+    float: none;
+  }
+
+  .main-header .main-menu .navbar-collapse {
+    display: none;
+    width: 100%;
+    background: #191e34;
+  }
+
+  .main-header .main-menu .navbar-collapse.show {
+    display: block;
+  }
+
+  .main-menu .navigation > li {
+    float: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .main-menu .navigation > li:before {
+    display: none;
+  }
+
+  .main-menu .navigation > li > a {
+    text-align: left;
+    padding: 12px 15px;
+  }
+
+  .main-menu .navigation > li > ul {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+  }
+
+  .react-slide {
+    min-height: 560px;
+  }
+
+  .home-main-slider,
+  .home-main-slide {
+    min-height: 560px;
+  }
+
+  .home-main-slider .content-box {
+    padding-top: 135px;
+    padding-bottom: 110px;
+  }
+
+  .home-main-slider h2 {
+    font-size: 42px;
+  }
+
+  .home-main-slider .text {
+    font-size: 18px;
+  }
+
+  .react-slide-content {
+    padding-top: 135px;
+  }
+
+  .main-slider h2 {
+    font-size: 42px;
+  }
+
+  .legacy-search-panel {
+    position: relative;
+  }
+
+  .legacy-search-panel .search-panel {
+    width: 100%;
+  }
+
+  .legacy-complementary {
+    padding: 30px 20px;
+  }
+}
